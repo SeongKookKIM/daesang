@@ -1,0 +1,565 @@
+@media screen and (min-width: 1200px) {
+  html,
+  body,
+  section {
+    width: 100%;
+  }
+  .mobile_munu {
+    display: none;
+  }
+  /*@@@@@@@@@@ header */
+  header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* border: 1px solid red; */
+    background: url(../img/main/s5-bg.png) center center no-repeat;
+  }
+  header .top_header {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    z-index: 150;
+  }
+
+  header .top_header span img {
+    width: 168px;
+    height: 60px;
+  }
+  /*@@@@@@@@@@@@@@@@@ header menu */
+  header #menu_box {
+    width: 150px;
+    position: fixed;
+    top: 20%;
+    z-index: 150;
+  }
+  #menu {
+    width: 150px;
+    margin: 100px auto;
+  }
+  #menu > ul > li > a {
+    display: block;
+    width: 150px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+  #menu > ul .list {
+    text-align: center;
+
+    display: none;
+  }
+
+  #menu > ul .list ol li {
+    padding: 5px 0;
+  }
+  #menu > ul .list ol li a {
+    font-size: 14px;
+    color: #333;
+  }
+  /* @@@@@@@헤더박스 */
+  #header_box {
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    position: relative;
+  }
+  #header_box h3 {
+    position: absolute;
+    top: 330px;
+    left: 300px;
+    font-size: 30px;
+    color: #fabe78;
+
+    z-index: 100;
+  }
+  #header_box h2 {
+    position: absolute;
+    top: 380px;
+    left: 300px;
+    font-size: 35px;
+    z-index: 100;
+    color: #fff;
+    opacity: 0;
+    transition: all 5s ease;
+  }
+  #header_box h2.on {
+    opacity: 1;
+  }
+  #header_box p {
+    position: absolute;
+    top: 480px;
+    left: 300px;
+    font-size: 20px;
+    z-index: 100;
+    color: #fff;
+    opacity: 0;
+    transition: all 5s ease;
+  }
+  #header_box p.on1 {
+    opacity: 1;
+  }
+  #header_box .introbox {
+    position: absolute;
+    top: 580px;
+    left: 300px;
+    /* border: 1px solid red; */
+    width: 650px;
+    opacity: 0;
+    transition: all 5s ease;
+  }
+  #header_box .introbox.on2 {
+    opacity: 1;
+  }
+
+  #header_box .introbox > ul {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+  }
+  #header_box .introbox > ul > li {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  #header_box .introbox > ul > li > img {
+    width: 45px;
+    height: 45px;
+    margin-top: 11px;
+    /* border: 1px solid red; */
+  }
+
+  /* @@@@@@@@@@@@@@@@@대상소개 */
+  #daesang {
+    height: 100%;
+    height: 1200px;
+    background: url(../img/main/s2-bg.png) center center no-repeat;
+    /* border: 1px solid red; */
+  }
+  #daesang .daesang_box {
+    width: 80%;
+    min-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    padding-top: 50px;
+    overflow: hidden;
+    /* position: relative; */
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+    opacity: 0;
+  }
+  #daesang .daesang_box .daesang_img {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+  }
+  #daesang .daesang_box h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #f0667b;
+  }
+  #daesang .daesang_box h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+    color: #fff;
+  }
+  #daesang .daesang_box p {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: lighter;
+    color: #fff;
+  }
+  #daesang .daesang_box .more_box {
+    width: 100px;
+    height: 20px;
+    margin: 10px auto;
+    border: 2px solid rgb(255, 255, 255, 0.5);
+  }
+  #daesang .daesang_box .more_box a {
+    color: white;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  /*@@@사업소개  */
+  /* 비디오 */
+  #busniess {
+    height: 1600px;
+    /* border: 1px solid red; */
+  }
+  #busniess .video_box {
+    width: 70%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    text-align: center;
+  }
+  /* 존중이야기 */
+  #busniess .txt_box {
+    width: 70%;
+    margin: 100px auto;
+    position: relative;
+    /* border: 1px solid red; */
+  }
+  #busniess .txt_box h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #f59364;
+  }
+  #busniess .txt_box h3 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  #busniess .txt_box .more_box {
+    width: 100px;
+    height: 25px;
+    border: 2px solid rgba(177, 121, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  #busniess .txt_box .more_box a {
+    color: #333;
+
+    text-align: center;
+    line-height: 25px;
+    color: #fbc47b;
+  }
+  #busniess .view_box {
+    width: 70%;
+
+    height: 580px;
+    border: 2px solid black;
+    margin: -50px auto;
+    display: flex;
+
+    border-collapse: collapse;
+    box-sizing: border-box;
+  }
+  #busniess .view_box .view_box_main {
+    width: 70%;
+    height: 100%;
+    border-right: 2px solid black;
+
+    position: relative;
+    border-collapse: collapse;
+    box-sizing: border-box;
+  }
+  #busniess .view_box .view_box_main img {
+    width: 100%;
+    height: 500px;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+    box-sizing: border-box;
+  }
+  #busniess .view_box .view_box_main p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #busniess .view_box .view_box_main .go_view_box {
+    position: absolute;
+    right: 10px;
+    top: 510px;
+    width: 100px;
+    height: 20px;
+    border: 2px solid rgb(0, 0, 0, 0.5);
+    border-collapse: collapse;
+    box-sizing: border-box;
+  }
+  #busniess .view_box .view_box_main .go_view_box a {
+    color: #333;
+
+    text-align: center;
+    line-height: 20px;
+  }
+  #busniess .view_box .view_box_main span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+  }
+  #busniess > .view_box > .view_ch > li > img {
+    display: none;
+  }
+  #busniess > .view_box > .view_ch {
+    width: 30%;
+    /* border: 1px solid red; */
+  }
+  #busniess > .view_box > .view_ch > li {
+    height: 20%;
+    line-height: 30px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    /* border: 1px solid red; */
+  }
+  #busniess > .view_box > .view_ch > li:nth-child(1) {
+    background: url(../img/esteem/S2208310447187_1.png) center center no-repeat;
+    background-size: cover;
+  }
+  #busniess > .view_box > .view_ch > li:nth-child(2) {
+    background: url(../img/esteem/S2209300219433_1.png) center center no-repeat;
+    background-size: cover;
+  }
+  #busniess > .view_box > .view_ch > li:nth-child(3) {
+    background: url(../img/esteem/S2209300217525_1.png) center bottom no-repeat;
+    background-size: cover;
+  }
+  #busniess > .view_box > .view_ch > li:nth-child(4) {
+    background: url(../img/esteem/S2209300220434_1.png) center center no-repeat;
+    background-size: cover;
+  }
+  #busniess > .view_box > .view_ch > li:nth-child(5) {
+    background: url(../img/esteem/S2208290245246_1.png) center center no-repeat;
+    background-size: cover;
+  }
+  #busniess > .view_box > .view_ch > li:last-child {
+    border-bottom: none;
+    height: 20%;
+  }
+  #busniess > .view_box > .view_ch > li > p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #busniess > .view_box > .view_ch > li > span {
+    font-size: 16px;
+  }
+  #busniess .more_box_bt {
+    display: none;
+  }
+
+  /* @@@@@@@@@@@@ir */
+  #ir {
+    width: 100%;
+    height: 400px;
+    background: url(../img/main/s6-bg.png) center center fixed;
+  }
+  #ir .ir_txt_box {
+    width: 500px;
+    position: relative;
+    left: 300px;
+    top: 100px;
+  }
+  #ir .ir_txt_box h3 {
+    font-size: 30px;
+    color: #fabe78;
+  }
+  #ir .ir_txt_box h2 {
+    margin-top: 20px;
+    font-size: 35px;
+    color: #fff;
+  }
+  #ir .ir_txt_box p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+  }
+  #ir .more_box {
+    width: 100px;
+    height: 20px;
+    border: 2px solid rgb(255, 255, 255, 0.5);
+    position: relative;
+    top: 110px;
+    left: 300px;
+  }
+  #ir .more_box a {
+    color: white;
+    text-align: center;
+    line-height: 20px;
+  }
+  /* @@@@@@news */
+  #news {
+    width: 100%;
+    margin-top: 100px;
+  }
+  #news .news_txt_box {
+    width: 70%;
+    /* min-width: 1300px; */
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    position: relative;
+  }
+  #news .news_txt_box h3 {
+    font-size: 30px;
+    color: #fabe78;
+  }
+  #news .news_txt_box p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  #news .news_txt_box .more_box {
+    width: 100px;
+    height: 20px;
+    border: 2px solid lightslategray;
+    position: absolute;
+    left: 400px;
+    bottom: 0;
+    display: none;
+  }
+  #news .news_txt_box .more_box a {
+    color: #333;
+    text-align: center;
+    line-height: 20px;
+  }
+  #news .news_box {
+    width: 70%;
+    margin: 50px auto;
+    position: relative;
+  }
+  #news .news_box > nav {
+    width: 100%;
+  }
+  #news .news_box > nav > ul {
+    width: 100%;
+    /* min-width: 1200px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+  }
+  #news .news_box > nav > ul > li {
+    width: 30%;
+    position: relative;
+    margin-bottom: 30px;
+    /* margin-right: 41px; */
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  #news .news_box > nav > ul > li > p {
+    margin-top: 5px;
+  }
+  #news .news_box > nav > ul > li:hover .bg_box {
+    opacity: 1;
+  }
+  #news .news_box > nav > ul > li:hover img {
+    transform: scaleX(120%);
+    box-sizing: border-box;
+  }
+  #news .news_box > nav > ul > li > img {
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+  }
+  #news .news_box > nav > ul > li .bg_box {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    opacity: 0;
+    transition: all 0.5s ease-in;
+
+    /* border: 1px solid red; */
+  }
+  #news .news_box > nav > ul > li .bg_box p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    top: 60px;
+  }
+  #news .news_box > nav > ul > li .bg_box .news_more {
+    width: 70px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    font-size: 13px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #news .news_box .news_more_bottom {
+    width: 70px;
+    height: 20px;
+    border: 2px solid #fabe78;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    margin: auto;
+    cursor: pointer;
+    color: #fabe78;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+
+    /* border: 1px solid red; */
+  }
+
+  /* @@@@@@footer */
+  footer {
+    width: 100%;
+    height: 100px;
+    border-top: 1px groove black;
+    position: relative;
+    top: 100px;
+
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* border: 1px solid red; */
+    background: url(../img/main/s4-bg.png) center bottom fixed;
+  }
+  footer .footer_txt_box {
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    /* height: 120px; */
+    /* border: 1px solid red; */
+  }
+  footer .footer_txt_box p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  footer .footer_txt_box span {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    box-sizing: border-box;
+  }
+  footer .footer_txt_box .copy {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  footer .footer_logo_box {
+    width: 10%;
+
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 70%;
+  }
+  footer .footer_logo_box img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="css/pc.css" />
+    <link rel="stylesheet" href="css/pc_1.css" />
+    <link rel="stylesheet" href="css/ta.css" />
+    <link rel="stylesheet" href="css/t_ver.css" />
+    <link rel="stylesheet" href="css/m.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul,
+      ol {
+        list-style: none;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+      }
+      html,
+      header,
+      section,
+      footer {
+        overflow-x: hidden;
+        transition: all 0.5s ease;
+      }
+      body {
+        transition: all 0.5s ease;
+      }
+      @font-face {
+        font-family: "Pretendard-Regular";
+
+        src: local("Pretendard-Regular"), url("../font/Pretendard-Regular.eot"),
+          url("../font/Pretendard-Regular.woff") format("woff"),
+          url("../font/Pretendard-Regular.ttf") format("truetype");
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      a,
+      p,
+      span {
+        font-family: "Pretendard-Regular";
+      }
+    </style>
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="lib/jquery.easing.1.3.js"></script>
+    <script src="lib/transit.min.js"></script>
+    <script src="js/daesang.js"></script>
+  </head>
+  <body>
+    <!-- 모바일메뉴 -->
+    <div class="mobile_munu">
+      <a href="#">대상소개</a>
+      <a href="#daesang">사업소개</a>
+      <a href="#ir">IR</a>
+      <a href="#news">그룹소식</a>
+    </div>
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@헤더 -->
+    <header>
+      <!-- @@@@@로고 -->
+      <div class="top_header">
+        <span><img src="img/main/ci_re.png" alt="로고" /></span>
+        <!-- 메뉴토글 -->
+        <div class="toggle">
+          <span class="stick t_stick"></span>
+          <span class="stick m_stick"></span>
+          <span class="stick b_stick"></span>
+        </div>
+      </div>
+      <!-- @@@@@@@메뉴 -->
+      <div id="menu_box">
+        <nav id="menu">
+          <ul>
+            <li class="btn shop"><a href="#">대상소개</a></li>
+            <li class="list">
+              <ol>
+                <li><a href="#">Respect Tree</a></li>
+                <li><a href="#">CI</a></li>
+                <li><a href="#">대상이야기</a></li>
+                <li><a href="#">게열사현황</a></li>
+                <li><a href="#">윤리경영</a></li>
+              </ol>
+            </li>
+            <li class="btn shop"><a href="#daesang">사업소개</a></li>
+            <li class="list">
+              <ol>
+                <li><a href="#">식품사업</a></li>
+                <li><a href="#">소재사업</a></li>
+                <li><a href="#">건강&뉴트리션사업</a></li>
+                <li><a href="#">축육&유통사업</a></li>
+                <li><a href="#">인프라&기타사업</a></li>
+              </ol>
+            </li>
+            <li class="btn shop"><a href="#ir">IR</a></li>
+            <li class="list">
+              <ol>
+                <li><a href="#">재무정보</a></li>
+                <li><a href="#">IR자료실</a></li>
+              </ol>
+            </li>
+            <li class="btn shop"><a href="#news">그룹소식</a></li>
+            <li class="list">
+              <ol>
+                <li><a href="#">존중이야기</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">ESG</a></li>
+              </ol>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- @@@@@@@@@@@@@@헤더박스 -->
+      <div id="header_box">
+        <h3>Business</h3>
+        <h2>
+          오늘은 고민하고 내일을 혁신하며<br />
+          일류 기업으로 도약합니다
+        </h2>
+        <p>
+          대상그룹의 모든 기업활동의 출발은 고객을 위한 가치 창조에서
+          시작됩니다.<br />
+          대상그룹은 고객의 신회와 사랑을 바탕으로 글로벌 기업으로 나아갑니다.
+        </p>
+        <nav class="introbox">
+          <ul>
+            <li><img src="img/main/s5-icon1.png" alt="아이콘1" /></li>
+            <li><img src="img/main/s5-icon2.png" alt="아이콘2" /></li>
+            <li><img src="img/main/s5-icon3.png" alt="아이콘3" /></li>
+            <li><img src="img/main/s5-icon4.png" alt="아이콘4" /></li>
+            <li><img src="img/main/s5-icon5.png" alt="아이콘5" /></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- @@@@@@@@@@@@section부분 -->
+
+    <!-- @@@@@대상소개 -->
+    <section id="daesang">
+      <div class="daesang_box">
+        <div class="daesang_img">
+          <img src="img/main/s2-img.png" alt="s2img" />
+        </div>
+        <h3>DAESANG Respect Tree</h3>
+        <h2>
+          대상은 존중의 힘으로<br />
+          건강한 세상을 만들어 갑니다
+        </h2>
+        <p>
+          Respect Tree는 대상그룹이 창조하는 모든 가치의 시작인 경영이념에서
+          시작됩니다.<br />
+          대상그룹의 브랜드 아이덴티티를 반영한 행동방식을 통해 브랜드 미션을
+          달성하는 가치 체계로,<br />
+          보다 견고하고 지속성 높은 대상그룹이 되기 위한 이정표가 될 것입니다.
+        </p>
+        <div class="more_box"><a href="#">More view</a></div>
+      </div>
+    </section>
+
+    <!-- @@@@@@@사업소개 -->
+    <section id="busniess">
+      <!-- 동영상부분 -->
+      <div class="video_box">
+        <video controls loop muted width="100%" height="100%">
+          <source src="img/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- 존중이야기 -->
+      <div class="txt_box">
+        <h4>존중이야기</h4>
+        <h3>더 많은 것들을 존중의 대상으로</h3>
+        <div class="more_box"><a href="#">More view</a></div>
+      </div>
+
+      <div class="view_box">
+        <div class="view_box_main">
+          <img src="img/esteem/S2208290245246_1.png" alt="도시편" />
+          <p>
+            더 많은 것들을 존중의 대상으로:<br />
+            도시편
+          </p>
+          <div class="go_view_box"><a href="#">보러가기</a></div>
+          <span>2022.09.28</span>
+        </div>
+        <ul class="view_ch">
+          <li>
+            <img src="img/esteem/S2208310447187_1.png" alt="가을꽃편" />
+            <p>더 많은 것들을 존중의 대상으로: <br />가을꽃편</p>
+            <span>2022.09.29</span>
+          </li>
+          <li>
+            <img src="img/esteem/S2209300219433_1.png" alt="연주회편" />
+            <p>더 많은 것들을 존중의 대상으로: <br />연주회편</p>
+            <span>2022.10.29</span>
+          </li>
+          <li>
+            <img src="img/esteem/S2209300217525_1.png" alt="한글날편" />
+            <p>더 많은 것들을 존중의 대상으로: <br />한글날편</p>
+            <span>2022.10.20</span>
+          </li>
+          <li>
+            <img src="img/esteem/S2209300220434_1.png" alt="나들이편" />
+            <p>더 많은 것들을 존중의 대상으로: <br />나들이편</p>
+            <span>2022.10.13</span>
+          </li>
+          <li>
+            <img src="img/esteem/S2208290245246_1.png" alt="도시편" />
+            <p>
+              더 많은 것들을 존중의 대상으로:<br />
+              도시편
+            </p>
+            <span>2022.09.28</span>
+          </li>
+        </ul>
+      </div>
+      <div class="more_box_bt"><a href="#">More view</a></div>
+    </section>
+    <!-- @@@@@@@@@ir -->
+    <section id="ir">
+      <div class="ir_txt_box">
+        <h3>IR</h3>
+        <h2>
+          투명한 경영으로<br />
+          함께하는 성장을 추구합니다
+        </h2>
+        <p>
+          투명하고 효율적인 경영을 통한 믿을 수 있는 파트너<br />
+          대상그룹의 사업성과를 소개합니다.
+        </p>
+      </div>
+      <div class="more_box"><a href="#">More view</a></div>
+    </section>
+    <!-- @@@@@@@@@@@@news -->
+    <section id="news">
+      <div class="news_txt_box">
+        <h3>NEWS</h3>
+        <p>대상그룹의 소식을 한눈에 확인하세요.</p>
+        <div class="more_box"><a href="#">More view</a></div>
+      </div>
+      <div class="news_box">
+        <nav>
+          <ul>
+            <li>
+              <img src="img/news/S2207290857592_1.jpg" alt="news1" />
+              <p>2022.10.15</p>
+              <div class="bg_box">
+                <p>
+                  대상라이프사이언스㈜, 中 시노팜그룹과 합작법인 설립 투자의향서
+                  체결
+                </p>
+                <div class="news_more">더보기 +</div>
+              </div>
+            </li>
+            <li>
+              <img src="img/news/S2209010912043_1.png" alt="news2" />
+              <p>2022.10.15</p>
+              <div class="bg_box">
+                <p>대상에프앤비㈜ & ㈜쏘클, 상호협력을 위한 MOU 체결</p>
+                <div class="news_more">더보기 +</div>
+              </div>
+            </li>
+            <li>
+              <img src="img/news/S2209010929559_1.jpg" alt="news3" />
+              <p>2022.10.15</p>
+              <div class="bg_box">
+                <p>
+                  대상㈜, 마곡에 ‘대상 이노파크’ 오픈... 글로벌 기업 초석 마련
+                </p>
+                <div class="news_more">더보기 +</div>
+              </div>
+            </li>
+            <li>
+              <img src="img/news/S2209280838334_1.jpg" alt="news4" />
+              <p>2022.10.15</p>
+              <div class="bg_box">
+                <p>
+                  DX KOREA 2022 방산전시회 대상(주) 참가,군 급식 개선을 위한
+                  다양한 제품 선보여
+                </p>
+                <div class="news_more">더보기 +</div>
+              </div>
+            </li>
+            <li>
+              <img src="img/news/S2210051030293_1.png" alt="news" />
+              <p>2022.10.15</p>
+            </li>
+            <li>
+              <img src="img/news/S2210051030293_1.png" alt="news" />
+              <p>2022.10.15</p>
+            </li>
+          </ul>
+        </nav>
+        <div class="news_more_bottom">더보기 +</div>
+      </div>
+    </section>
+
+    <!-- @@@@@@@@@@@@@footer -->
+    <footer>
+      <div class="footer_txt_box">
+        <p>서울특별시 중구 세종대로 9길 41 퍼시픽타워 2층</p>
+        <span>TEL : 02-2211-6553</span>
+        <span>FAX : 02-2214-6511</span>
+        <p class="copy">
+          Copyright 2019 DAESANG HOLDINGS. All Rights reserved.
+        </p>
+      </div>
+      <div class="footer_logo_box">
+        <img src="img/main/footer-ci.png" alt="푸터로고" />
+      </div>
+    </footer>
+  </body>
+</html>
